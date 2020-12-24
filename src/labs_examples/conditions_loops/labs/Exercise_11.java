@@ -23,4 +23,35 @@ package labs_examples.conditions_loops.labs;
 
 public class Exercise_11 {
 
+
+    public static void main(String[] args) {
+
+        int row = 1;
+
+        int maxRow = 10;
+
+        while(row <= maxRow) {
+
+            int maxIteration = 10;
+
+            int result = 0;
+
+            for (int counter = 0 ; counter < maxIteration ; counter++) {
+
+                int newResult = row + result;
+
+                System.out.print(newResult + " |");
+
+                result = newResult;
+
+                if (counter == maxIteration - 1) {
+
+                    System.out.print("\n");
+                    row++;
+
+                }
+            }
+        }
+    }
+
 }
